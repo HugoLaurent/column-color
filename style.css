@@ -1,0 +1,102 @@
+/* COLORS */
+
+:root {
+    --color-first-card:      hsl(31, 77%, 52%);
+    --color-second-card:     hsl(184, 100%, 22%);
+    --colot-third-card:      hsl(179, 100%, 13%);
+
+    --color-paragraphs:      hsla(0, 0%, 100%, 0.75);
+    --color-bg-headings-btn: hsl(0, 0%, 95%);
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: var(--color-bg-headings-btn);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.first-card {
+    background-color: var(--color-first-card);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.second-card {
+    background-color: var(--color-second-card);
+}
+
+.third-class {
+    background-color: var(--colot-third-card);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+    width: 250px;
+    padding: 60px 40px;
+}
+
+
+article img {
+    max-width: max-content;
+}
+
+article h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--color-bg-headings-btn);
+    font-size: 2rem;
+}
+
+article p {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--color-paragraphs);
+    font-size: 15px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    width: 80%;
+}
+
+button {
+    border: none;
+    width: fit-content;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 35px;
+    width: 50%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.first-card button {
+    color: var(--color-first-card);
+}
+
+.second-card button {
+    color: var(--color-second-card);
+}
+
+.third-card button {
+    color: var(--color-first-card);
+}
