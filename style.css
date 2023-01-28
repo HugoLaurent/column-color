@@ -13,29 +13,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-* {
-    box-sizing: content-box;
-}
-
 body {
-    background-color: var(--color-bg-headings-btn);
     height: 100vh;
-    margin: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 main {
+    background-color: white;
     display: flex;
-    justify-content: center;
     height: 500px;
+    border-top-right-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .first-card {
     background-color: var(--color-first-card);
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 14px;
 }
 
 .second-card {
@@ -99,4 +97,38 @@ button {
 
 .third-card button {
     color: var(--color-first-card);
+}
+
+@media (min-width: 676px)and (max-width: 1005px) {
+    
+    .second-card {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .third-class {
+      border-radius: 15px;
+    }
+
+
+  
+}
+
+@media (max-width: 675px) {
+    
+    .first-card {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .third-class {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .body {
+        display: block;
+    }
 }
